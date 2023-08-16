@@ -39,7 +39,7 @@ jobs:
           name: compiled-code
           path: app/build/libs/
       - name: Build Docker image
-        run: ci/build-docker-image.sh
+        run: ci/build-docker.sh
         env:
           DOCKER_USERNAME: ${{ env.docker_username }}
           DOCKER_PASSWORD: ${{ env.docker_password }}
